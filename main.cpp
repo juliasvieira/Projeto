@@ -23,7 +23,7 @@ class Usuario{
       int getSenha();
      void setCpf(int _cpf);
       int getCpf();
-      ~Usuario(); //destrutor 
+      ~Usuario(void); //destrutor 
    
 };
 
@@ -35,7 +35,8 @@ class Usuario{
       cpf = 0;
     }
 
-    Usuario::~Usuario(){
+    Usuario::~Usuario(void){
+      cout << "Classe destruida" << endl;
     }
 
      void Usuario::setNome(string _nome){
@@ -65,6 +66,27 @@ class Usuario{
      void Usuario::setCpf(int _cpf){
       cpf = _cpf;
      }
+
+     
+   class Pizza{
+      private:
+      string sabor; 
+      string tamanho;
+
+      public:
+      void escolherSabor();
+      void escolherTamanho(); //tamanhos possiveis: pequena, media, grande 
+
+   };
+
+   void escolherSabor(string _sabor){
+      sabor = _sabor;
+   }
+
+   void escolherTamanho(string _tamanho)[
+      tamanho = _tamanho;
+   ]
+
  
    
  int main(){
@@ -80,6 +102,9 @@ class Usuario{
     cin >> senha  >> telefone;
     user.setSenha(senha);
     user.setTelefone(telefone);
+    ~Usuario();
+
+
     return 0;
  }
 
