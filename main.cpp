@@ -23,6 +23,7 @@ class Usuario{
       int getSenha();
      void setCpf(int _cpf);
       int getCpf();
+      ~Usuario(); //destrutor 
    
 };
 
@@ -32,6 +33,9 @@ class Usuario{
       telefone = 0;
       senha = 0;
       cpf = 0;
+    }
+
+    Usuario::~Usuario(){
     }
 
      void Usuario::setNome(string _nome){
