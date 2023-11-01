@@ -1,4 +1,4 @@
-main.cpp#include <iostream>
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -64,9 +64,18 @@ class Usuario{
  
    
  int main(){
-    Usuario usuario1;
-    usuario1.setNome("ana");
-    cout << "Nome digitado:" << usuario1.getNome();
-    
+    Usuario user;
+    string nome,email;
+    int telefone, senha, cpf;
+    cout << "Cadastre seu nome, email e cpf, respectivamente" << endl;
+    cin >> nome >> email >> cpf;
+    user.setNome(nome);
+    user.setEmail(email);
+    user.setCpf(cpf);
+    cout << "Digite em seguida sua senha de acesso e telefone para contato" << endl;
+    cin >> senha  >> telefone;
+    user.setSenha(senha);
+    user.setTelefone(telefone);
     return 0;
  }
+
