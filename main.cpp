@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <vector> 
+#include <map>
 
 using namespace std;
 
@@ -70,39 +72,67 @@ class Usuario{
      
    class Pizza{
       private:
-      string sabor; 
-      string tamanho;
+      vector <string> tamanho;
+      vector <string> sabor;
+      int quantidade; 
+      bool borda;
 
       public:
+      Pizza(); //construtor 
+      void escolherQuantidade();
+      void adicionarIngredientes();
       void escolherSabor();
-      void escolherTamanho(); //tamanhos possiveis: pequena, media, grande 
-
+      void escolherTamanho();
+      float calcularPreco(); 
+      ~Pizza(void); //destrutor 
    };
 
-   void escolherSabor(string _sabor){
-      sabor = _sabor;
-   }
+      void mostrarCardapio(){
+         cout << "Cardapio:" << endl << endl <<
+         "Sabores das Pizzas:" << endl <<
+         "-Frango com catupiry " << endl <<
+          "-Calabresa"           << endl <<
+          "-Marguerita"          << endl << endl <<
+          "Tamanhos e Valores:"  << endl <<
+          "Pequeno: R$39,90"     << endl <<
+          "Medio: R$49,90"       << endl << 
+          "Grande: R$59,90"      << endl << endl <<
+          "Caso tenha acréscimo de borda, em qualquer pizza, o valor acrescentado sera de R$11,90";
 
-   void escolherTamanho(string _tamanho)[
-      tamanho = _tamanho;
-   ]
+      }
 
- 
+      // void Pizza::escolherQuantidade(int _quantidade){
+      //    cout << "Digite a quantidade de pizzas que serão pedidas" <<endl;
+      //    quantidade = _quantidade; 
+      // }
+
    
  int main(){
     Usuario user;
     string nome,email;
-    int telefone, senha, cpf;
-    cout << "Cadastre seu nome, email e cpf, respectivamente" << endl;
-    cin >> nome >> email >> cpf;
-    user.setNome(nome);
-    user.setEmail(email);
-    user.setCpf(cpf);
-    cout << "Digite em seguida sua senha de acesso e telefone para contato" << endl;
-    cin >> senha  >> telefone;
-    user.setSenha(senha);
-    user.setTelefone(telefone);
-    ~Usuario();
+     int telefone, senha, cpf , confirmacaoPedido;
+     cout << "Cadastre seu nome, email e cpf, respectivamente" << endl;
+     cin >> nome >> email >> cpf;
+     user.setNome(nome);
+     user.setEmail(email);
+     user.setCpf(cpf);
+     cout << "Digite em seguida seu telefone para contato" << endl;
+     cin >> senha  >> telefone;
+     user.setSenha(senha);
+     user.setTelefone(telefone);
+    
+    cout << "Ja podemos começar o pedido. Digite 1 caso sim, caso contrario digite 2" << endl;
+    cin >> confirmacaoPedido;
+    if(confirmacaoPedido==1){
+      cout << "Ok! Vamos iniciar" << endl;
+    } else {
+      cout << "Agradecemos por seu acesso a plataforma e ficamos no aguardo do seu pedido. Ate breve!" <<endl;
+    }
+
+    mostrarCardapio();
+
+
+
 
 
     return 0;
