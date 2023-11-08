@@ -4,12 +4,11 @@
 using namespace std;
  
  Usuario::Usuario(){ //inicializa a classe com campos vazios 
-      nome = "";
-      telefone = 0;
-      cpf = 0;
+
     }
 
     Usuario::~Usuario(void){ 
+      nome.clear();
       cout << "Classe destruida" << endl;
     }
 
@@ -27,6 +26,14 @@ using namespace std;
 
      void Usuario::setCpf(int _cpf){
       cpf = _cpf;
+     }
+
+     void Usuario::setEndereco(string _endereco){
+      endereco = _endereco;
+     }
+
+     string Usuario::getEndereco(){
+      return endereco;
      }
 
      void Usuario::imprimeUsuario(){
