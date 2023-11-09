@@ -1,23 +1,16 @@
-#include <string>
-#include <vector>
-using namespace std;
+#include "bebida.hpp"
+#include <iostream>
 
-class Bebida {
-private:
-  string sabor;
-  string tamanho;
-  float valor;
+int main() {
+Bebida bebida1;
+   string sabor, tamanho;
+   cout << "Digite o sabor" << endl;
+   cin >> sabor;
+   bebida1.setSabor(sabor);
+   cout << "Digite o tamanho" << endl;
+   cin >> tamanho;
+   bebida1.setTamanho(tamanho);
+   bebida1.imprime_Bebida();*/
 
-public:
-  Bebida(); // construtor
-  void setSabor(string _sabor);
-  void setTamanho(string _tamanho);
-  void setValor(float _valor);
-
-  string getSabor();
-  string getTamanho();
-  float getValor();
-  void imprime_Bebida();
-
-  ~Bebida(void); // destrutor
-};
+  return 0;
+}
