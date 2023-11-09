@@ -6,20 +6,19 @@ using namespace std;
 
 
  int main(){
-   //  Usuario user;
-   //  string nome;
-   //  int telefone,cpf;
-   //  cout << "iniciando o cadastro. digite seu nome" << endl;
-   //  cin >> nome;
-   //  user.setNome(nome);
-   //  cout << "digite seu telefone" << endl;
-   //  cin >> telefone; 
-   //  user.setTelefone(telefone);
-   //  cout << "digite seu cpf" << endl;
-   //  cin >> cpf;
-   //  user.setCpf(cpf);
-   //  cout << user.getNome() << endl;
-   //  user.imprimeUsuario();
+      Usuario user;
+    string nome;
+    int telefone,cpf;
+    cout << "Iniciando o cadastro... Digite seu nome" << endl;
+    cin >> nome;
+    user.setNome(nome);
+    cout << "Insira agora seu telefone" << endl;
+    cin >> telefone; 
+    user.setTelefone(telefone);
+    cout << "Por ultimo, insira seu cpf" << endl;
+    cin >> cpf;
+    user.setCpf(cpf);
+    cout << "Confirme se estes dados estam corretos" <<  user.imprimeUsuario(); << endl;
 
     Pizza pizza1;
     string sabor, tamanho, adicional;
