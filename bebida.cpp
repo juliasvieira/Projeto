@@ -1,23 +1,21 @@
-#include <string>
-#include <vector>
-using namespace std;
+#include "bebida.hpp"
+#include <iostream>
 
-class Bebida {
-private:
-  string sabor;
-  string tamanho;
-  float valor;
+Bebida::Bebida() {}
+void Bebida::setSabor(string _sabor) { sabor = _sabor; }
+void Bebida::setTamanho(string _tamanho) { tamanho = _tamanho; }
+void Bebida::setValor(float _valor) { valor = _valor; }
+string Bebida::getSabor() { return sabor; }
+string Bebida::getTamanho() { return tamanho; }
+float Bebida::getValor() { return valor; }
 
-public:
-  Bebida(); // construtor
-  void setSabor(string _sabor);
-  void setTamanho(string _tamanho);
-  void setValor(float _valor);
+void Bebida::imprime_Bebida() {
+  cout << "Sabor:" << sabor << endl << "Tamanho:" << tamanho << endl;
+}
+void ::Bebida::imprima() { cout << "qualquer coisa" << endl; }
 
-  string getSabor();
-  string getTamanho();
-  float getValor();
-  void imprime_Bebida();
-
-  ~Bebida(void); // destrutor
-};
+Bebida::~Bebida(void) {
+  sabor.clear();
+  tamanho.clear();
+  cout << "Classe destruida" << endl;
+}
