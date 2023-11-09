@@ -10,7 +10,7 @@ Bebida bebida1;
    cout << "Digite o tamanho" << endl;
    cin >> tamanho;
    bebida1.setTamanho(tamanho);
-   bebida1.imprime_Bebida();*/
+   bebida1.imprime_Bebida();
 
   return 0;
 }
