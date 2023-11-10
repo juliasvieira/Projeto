@@ -15,12 +15,10 @@ public:
   void setSabor(string _sabor);
   void setTamanho(string _tamanho);
   void setValor(float _valor);
-
   string getSabor();
   string getTipo();
   string getTamanho();
   float getValor();
   void imprimeBebida();
-
   ~Bebida(void); // destrutor
 };

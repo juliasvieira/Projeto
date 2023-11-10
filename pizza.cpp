@@ -6,6 +6,13 @@ using namespace std;
  Pizza::Pizza(){  
  }
 
+ Pizza::Pizza(string _sabor, string _tamanho, vector <string> _adicionais, float _valor){
+   sabor = _sabor;
+   tamanho = _tamanho;
+   adicionais = _adicionais;
+   valor = _valor + (adicionais.size()*2);
+ }
+
 void Pizza::setSabor(string _sabor){
     sabor = _sabor; 
  }
@@ -28,6 +35,7 @@ void Pizza::setSabor(string _sabor){
 
  void Pizza::addAdicional(string _adicional){
     adicionais.push_back(_adicional); //adicionando os acrescimos no vetor 
+    valor = valor + 2;
  }
 
  void Pizza::imprimeAdicionais(){
@@ -41,7 +49,6 @@ void Pizza::setSabor(string _sabor){
  void Pizza::imprimePizza(){
     cout << "Sabor:" << sabor << endl << "Tamanho:" << tamanho << endl;
     imprimeAdicionais();
-
  }
 
 

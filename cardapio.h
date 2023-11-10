@@ -13,5 +13,5 @@ class Cardapio{
     public:
     void inicializarCardapio(); //o administrador consegue inicializar o cardapio conforme quiser 
     void getPizzas(); //mostra as pizzas do cardapio
-    void getBebidas(); //mostra as bebidas do cardapio 
+    void getBebidas(); //mostra as bebidas do cardapio
 };
