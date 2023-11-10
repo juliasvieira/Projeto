@@ -10,6 +10,8 @@ class Usuario{
 
     public:
      Usuario(); //construtor 
+     Usuario(string _nome, string _endereco, int _telefone, int _cpf);
+     void cadastroInicial();
      void setNome(string _nome);
      void setEndereco(string _endereco);
      string getEndereco();

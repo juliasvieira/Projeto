@@ -4,8 +4,8 @@
 using namespace std;
  
  Usuario::Usuario(){ //inicializa a classe com campos vazios 
+  }
 
-    }
 
     Usuario::~Usuario(void){ 
       nome.clear();
@@ -34,6 +34,22 @@ using namespace std;
 
      string Usuario::getEndereco(){
       return endereco;
+     }
+
+      void Usuario::cadastroInicial(){
+         int confirmacaoPedido;
+       cout << "Iniciando o cadastro... Digite seu nome" << endl;
+       cin >> nome;
+       cout << "Insira agora seu telefone" << endl;
+       cin >> telefone;
+       cout << "Por ultimo, insira seu cpf" << endl;
+       cin >> cpf;
+      //  cout << "Cadastro realizado com sucesso!Caso queira prosseguir com o pedido, digite 1, caso contrário 
+      //  digite 2" << endl;
+      //  cin >> confirmacaoPedido;
+      //  if (confirmacaoPedido==1){
+      //    -chamar a classe para pedido 
+      //  }
      }
 
      void Usuario::imprimeUsuario(){

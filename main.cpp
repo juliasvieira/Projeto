@@ -5,19 +5,9 @@
 using namespace std;
 
  int main(){
-    // Usuario user;
-    // string nome;
-    // int telefone,cpf;
-    // cout << "Iniciando o cadastro... Digite seu nome" << endl;
-    // cin >> nome;
-    // user.setNome(nome);
-    // cout << "Insira agora seu telefone" << endl;
-    // cin >> telefone; 
-    // user.setTelefone(telefone);
-    // cout << "Por ultimo, insira seu cpf" << endl;
-    // cin >> cpf;
-    // user.setCpf(cpf);
-    // cout << "Confirme se estes dados estam corretos" <<  user.imprimeUsuario(); << endl;
+    Usuario user;
+    user.cadastroInicial();
+   
 
     // Pizza pizza1;
     // string sabor, tamanho, adicional;
@@ -48,10 +38,10 @@ using namespace std;
   //  bebida1.setTamanho(tamanho);
   //  bebida1.imprime_Bebida();
 
-   Cardapio cardapio;
-   cardapio.inicializarCardapio();
-   cardapio.getPizzas();
-   cardapio.getBebidas();
+   // Cardapio cardapio;
+   // cardapio.inicializarCardapio();
+   // cardapio.getPizzas();
+   // cardapio.getBebidas();
 
     
     return 0;
