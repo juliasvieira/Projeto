@@ -56,6 +56,5 @@ void Pizza::setSabor(string _sabor){
     sabor.clear();
     tamanho.clear();
     adicionais.clear();
-    cout << "Classe destruida" << endl;
  }
 

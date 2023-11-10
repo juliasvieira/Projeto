@@ -39,7 +39,7 @@ float Bebida::getValor() {
   }
 
 void Bebida::imprimeBebida() {
-  cout << "Tipo:" << tipo << endl << "Sabor:" << sabor << endl << "Tamanho:" << tamanho << endl;
+  cout << "Tipo:" << tipo << endl << "Sabor:" << sabor << endl << "Tamanho:" << tamanho << endl << "Valor:" << valor << endl;
 }
 
 

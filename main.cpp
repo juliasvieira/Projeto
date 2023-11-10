@@ -49,7 +49,9 @@ using namespace std;
   //  bebida1.imprime_Bebida();
 
    Cardapio cardapio;
+   cardapio.inicializarCardapio();
    cardapio.getPizzas();
+   cardapio.getBebidas();
 
     
     return 0;

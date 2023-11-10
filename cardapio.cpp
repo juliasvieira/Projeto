@@ -12,10 +12,12 @@ void Cardapio::inicializarCardapio(){
 
     //inicializando as bebidas do cardapio 
     bebidas.push_back(Bebida("Refrigerante", "Coca", "Lata", 5.00)); 
+
+
 }
 
 void Cardapio::getPizzas(){
-     cout << "Pizzas"; 
+     cout << "Pizzas" << endl;
     for (int i=0; i<pizzas.size(); i++){
          pizzas[i].imprimePizza();
     }
@@ -23,5 +25,11 @@ void Cardapio::getPizzas(){
 }
 
 void Cardapio::getBebidas(){
-    cout <<"Bebidas";
+    cout <<"Bebidas"<< endl;
+     for (int i=0; i<bebidas.size(); i++){
+         bebidas[i].imprimeBebida();
+    }
+    cout << endl;
+
+
 }
