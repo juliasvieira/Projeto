@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+#ifndef BEBIDA_H
+#define BEBIDA_H
 class Bebida {
 private:
   string sabor;
@@ -23,3 +25,4 @@ public:
   void inicializandoBebida();
   ~Bebida(void); // destrutor
 };
+#endif 
