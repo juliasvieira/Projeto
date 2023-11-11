@@ -2,6 +2,9 @@
 #include <vector>
 using namespace std;
 
+#ifndef PIZZA_H
+#define PIZZA_H
+
 
 class Pizza{
     private:
@@ -27,3 +30,4 @@ class Pizza{
       ~Pizza(void); //destrutor 
    
 };
+#endif
