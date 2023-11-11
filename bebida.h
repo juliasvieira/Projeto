@@ -20,5 +20,6 @@ public:
   string getTamanho();
   float getValor();
   void imprimeBebida();
+  void inicializandoBebida();
   ~Bebida(void); // destrutor
 };

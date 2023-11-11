@@ -44,12 +44,13 @@ using namespace std;
        cin >> telefone;
        cout << "Por ultimo, insira seu cpf" << endl;
        cin >> cpf;
-      //  cout << "Cadastro realizado com sucesso!Caso queira prosseguir com o pedido, digite 1, caso contrário 
-      //  digite 2" << endl;
-      //  cin >> confirmacaoPedido;
-      //  if (confirmacaoPedido==1){
-      //    -chamar a classe para pedido 
-      //  }
+        cout << "Cadastro realizado com sucesso!Caso queira prosseguir com o pedido, digite 1, caso contrário digite 2";
+        cin >> confirmacaoPedido;
+       if (confirmacaoPedido==1){
+         cout << "Prosseguindo com pedido";
+       } else {
+         cout << "Ficamos aguardando por você!";
+       }
      }
 
      void Usuario::imprimeUsuario(){

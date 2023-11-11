@@ -23,6 +23,7 @@ class Pizza{
     void setAdicionais(vector <string> _adicionais); 
     void imprimePizza();
     void imprimeAdicionais();
+    void inicializandoPizza();
       ~Pizza(void); //destrutor 
    
 };

@@ -19,6 +19,7 @@ void Cardapio::inicializarCardapio(){
     bebidas.push_back(Bebida("Refrigerante", "Coca", "600ml", 7.00)); 
     bebidas.push_back(Bebida("Refrigerante", "Guarana", "Lata", 5.00));  
     bebidas.push_back(Bebida("Refrigerante", "Guarana", "600ml", 7.00)); 
+    bebidas.push_back(Bebida("Suco", "Laranja", "600ml", 7.00)); 
 }
 
 void Cardapio::getPizzas(){

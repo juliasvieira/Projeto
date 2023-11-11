@@ -39,7 +39,7 @@ void Pizza::setSabor(string _sabor){
  }
 
  void Pizza::imprimeAdicionais(){
-    cout << "Adicionais"; 
+    cout << "Adicionais";
     for(string adc: adicionais){
         cout << adc << ", ";
     }
@@ -51,10 +51,26 @@ void Pizza::setSabor(string _sabor){
     imprimeAdicionais();
  }
 
+ void Pizza::inicializandoPizza(){
+   int confirma; string adicional;
+   cout << "Digite o sabor" << endl;
+   cin >> sabor; 
+   cout << "Digite o tamanho" << endl;
+   cin >> tamanho;
+   cout << "Deseja adicionar acrescimos? Caso sim, digite 1, caso contrario digite 2" << endl;
+   cin >> confirma;
+   if (confirma==1){
+      cout << "Digite o acrescimo que deseja:" << endl;
+      cin >> adicional;
+      addAdicional(adicional);
+   }
+ }
+
 
  Pizza::~Pizza(void){
     sabor.clear();
     tamanho.clear();
     adicionais.clear();
+    cout <<"Classe destruida" << endl;
  }
 
