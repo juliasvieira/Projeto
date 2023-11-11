@@ -1,3 +1,9 @@
+#ifndef PEDIDO_H
+#define PEDIDO_H
+#include "pizza.h"
+#include "bebida.h"
+#include <string>
+#include <vector>
 
 class Pedido{
 private:
@@ -13,3 +19,4 @@ public:
     string getFormaPagamento();
     void montarPizza();
 };
+#endif
